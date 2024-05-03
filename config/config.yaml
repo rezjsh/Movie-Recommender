@@ -5,13 +5,61 @@ download_config:
   filename: "file.zip"
   extract_path: artifacts/unzip_data
   url: "https://github.com/rezjsh/data/raw/main/tmdb.zip"
-# root_dir: "path/to/your/dataset/directory"
-# dataset_name: "dataset-name"
-# required_columns:
-#   - "column1"
-#   - "column2"
-#   - "column3"
-# data_types:
-#   column1: "int64"
-#   column2: "float64"
-#   column3: "object"
+
+validate_dataset:
+  root_dir: artifacts
+  dataset_name: unzip_data
+  tmdb_5000_credits:
+    required_columns:
+      - movie_id
+      - title
+      - cast
+      - crew
+    data_types:
+      movie_id: int
+      title: str
+      cast: str
+      crew: str
+  tmdb_5000_movies:
+    required_columns:
+      - budget
+      - genres
+      - homepage
+      - id
+      - keywords
+      - original_language
+      - original_title
+      - overview
+      - popularity
+      - production_companies
+      - production_countries
+      - release_date
+      - revenue
+      - runtime
+      - spoken_languages
+      - status
+      - tagline
+      - title
+      - vote_average
+      - vote_count
+    data_types:
+      budget: int
+      genres: str
+      homepage: str
+      id: int
+      keywords: str
+      original_language: str
+      original_title: str
+      overview: str
+      popularity: float
+      production_companies: str
+      production_countries: str
+      release_date: str
+      revenue: int
+      runtime: int
+      spoken_languages: str
+      status: str
+      tagline: str
+      title: str
+      vote_average: float
+      vote_count: int

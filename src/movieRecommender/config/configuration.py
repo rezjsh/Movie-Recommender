@@ -1,4 +1,5 @@
 from movieRecommender.components.fetch_data import DataDownloader
+from movieRecommender.components.validationConfig import ValidationConfig
 from movieRecommender.constants import *
 from movieRecommender.utils.common import load_config, create_directories
 
@@ -18,3 +19,15 @@ class ConfigHandler:
             url= config.url
         )
         return fetch_data_config
+    
+
+    
+    def get_validation_config(self, dataset_name: str) -> ValidationConfig:
+        config = self.config.validate_dataset[dataset_name]
+        validation_config = ValidationConfig(
+            root_dir=self.config.validate_dataset.root_dir,
+            dataset_name=self.config.validate_dataset.dataset_name,
+            required_columns=config.required_columns,
+            data_types=config.data_types
+        )
+        return validation_config
