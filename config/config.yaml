@@ -1,0 +1,17 @@
+root_dir: "artifacts"
+
+download_config:
+  filepath: "artifacts/download"
+  filename: "file.zip"
+  extract_path: artifacts/unzip_data
+  url: "https://github.com/rezjsh/data/raw/main/tmdb.zip"
+# root_dir: "path/to/your/dataset/directory"
+# dataset_name: "dataset-name"
+# required_columns:
+#   - "column1"
+#   - "column2"
+#   - "column3"
+# data_types:
+#   column1: "int64"
+#   column2: "float64"
+#   column3: "object"
