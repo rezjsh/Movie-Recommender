@@ -9,7 +9,7 @@ __version__ = "0.0.0"
 
 REPO_NAME ="Movie-Recommender"
 AUTHOR_USER_NAME = 'rezjsh'
-SRC_REPO = 'movie-recommender'
+SRC_REPO = 'movieRecommender'
 AUTHOR_EMAIL = 'example@gmail.com'
 
 
