@@ -6,7 +6,7 @@ FORMAT = '[%(asctime)s]: %(message)s'
 logging.basicConfig(level=logging.INFO, format=FORMAT)
 
 
-project_name = 'movie-recommender'
+project_name = 'movieRecommender'
 
 list_of_files = [
     ".github/worflows/.gitkeep",
@@ -19,6 +19,7 @@ list_of_files = [
     f"src/{project_name}/config/configuration.py",
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/constants/__init__.py",
+    f"src/{project_name}/entities/__init__.py",
     "config/config.yaml",
     "params.yaml",
     "app.py",
@@ -26,7 +27,7 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
-    "expriments/trials.ipynb"
+    "expriments/trials.ipynb",
 ]
 
 
